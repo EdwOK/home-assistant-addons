@@ -1,12 +1,13 @@
 name: Dahua P2P Tunnel
-version: "0.1.0"
+version: "0.2.0"
 slug: dh_p2p
 description: Reach a Dahua VTO/camera over Dahua P2P (serial number) using dh-p2p
-url: https://github.com/khoanguyen-3fc/dh-p2p
+url: https://github.com/EdwOK/home-assistant-addons/tree/main/dh_p2p
+# Prebuilt by .github/workflows/build.yaml; HA pulls it instead of building.
+image: ghcr.io/edwok/{arch}-addon-dh_p2p
 arch:
   - amd64
   - aarch64
-  - armv7
 startup: services
 boot: auto
 # Tunnels listen on the HA host itself, so the Dahua integration can use 127.0.0.1.

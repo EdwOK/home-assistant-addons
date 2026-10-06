@@ -24,7 +24,7 @@ filter() {
     cat
   else
     grep --line-buffered -E \
-      'session established|Forwarding|Accepted|did not accept|timed out|session lost|panicked|Error'
+      'session established|Forwarding|Accepted|did not accept|timed out|session lost|PTCP (duplicate|gap|resync)|panicked|Error'
   fi
 }
 
