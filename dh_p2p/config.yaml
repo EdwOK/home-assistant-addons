@@ -1,5 +1,5 @@
 name: Dahua P2P Tunnel
-version: "0.2.0"
+version: "0.2.1"
 slug: dh_p2p
 description: Reach a Dahua VTO/camera over Dahua P2P (serial number) using dh-p2p
 url: https://github.com/EdwOK/home-assistant-addons/tree/main/dh_p2p

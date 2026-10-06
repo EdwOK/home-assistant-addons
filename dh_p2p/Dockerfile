@@ -3,7 +3,7 @@ RUN apk add --no-cache git musl-dev
 # dh-p2p fork, multiport branch (several ports over one P2P session, timeouts
 # instead of hangs, no panics on unknown realms), pinned to a commit.
 ARG DH_P2P_REPO=https://github.com/EdwOK/dh-p2p
-ARG DH_P2P_COMMIT=09e8a6689ee01fa2c32481bce1af4518cf3d6310
+ARG DH_P2P_COMMIT=1ecdbc7e32dbf3f35176ffa8b7e4cb34fc52d011
 RUN git clone --branch multiport "$DH_P2P_REPO" /src \
     && git -C /src checkout "$DH_P2P_COMMIT"
 WORKDIR /src
