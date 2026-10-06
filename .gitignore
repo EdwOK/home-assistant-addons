@@ -1,0 +1,12 @@
+# Secrets and local test config (e.g. the VTO serial)
+.env
+.env.*
+options.json
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

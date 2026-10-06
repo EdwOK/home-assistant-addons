@@ -1,0 +1,25 @@
+name: Dahua P2P Tunnel
+version: "0.1.0"
+slug: dh_p2p
+description: Reach a Dahua VTO/camera over Dahua P2P (serial number) using dh-p2p
+url: https://github.com/khoanguyen-3fc/dh-p2p
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: services
+boot: auto
+# Tunnels listen on the HA host itself, so the Dahua integration can use 127.0.0.1.
+host_network: true
+options:
+  serial: ""
+  bind_address: 127.0.0.1
+  http_port: 8080
+  rtsp_port: 1554
+  debug_log: false
+schema:
+  serial: str
+  bind_address: str
+  http_port: port
+  rtsp_port: port
+  debug_log: bool
